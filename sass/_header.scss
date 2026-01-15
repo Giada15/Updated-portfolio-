@@ -1,0 +1,145 @@
+.header {
+  grid-column: ml-start / mr-end;
+
+  display: grid;
+  grid-template-columns: calc(100% / 3) 1fr;
+
+  @media only screen and(max-width: $bp-md) {
+    grid-template-columns: 1fr;
+  }
+
+  // grid-template-rows: 85% 1fr;
+
+  //HEADER LEFT
+
+  &__left {
+    background-color: $color-pink;
+
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 8rem 1fr repeat(4, min-content) 1fr;
+    grid-row-gap: 1.5rem;
+
+    @media only screen and(max-width: $bp-md) {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+    font-size: 1.3rem;
+
+    font-weight: 300;
+  }
+
+  &__btn {
+    grid-column: 2/3;
+    grid-row: 5/6;
+
+    margin-top: 2rem;
+    justify-self: start;
+
+    @media only screen and(max-width: $bp-md) {
+      justify-self: center;
+    }
+  }
+
+  &__link {
+    &--dark {
+      background-color: $color-grey-dark-1;
+    }
+
+    &--light {
+      background-color: $color-pink;
+    }
+
+    &:link,
+    &:active {
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      position: relative;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &__icons {
+    grid-column: 2/3;
+    grid-row: 6/7;
+
+    display: flex;
+
+    column-gap: 1.5rem;
+
+    margin-top: 2rem;
+
+    @media only screen and(max-width: $bp-md) {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--light {
+      fill: rgba($color-grey-light-1, 0.95);
+    }
+
+    &--dark {
+      fill: $color-grey-dark-1;
+    }
+  }
+
+  //HEADER RIGHT
+
+  &__right {
+    background-image: linear-gradient(
+        rgba($color-pink, 0.2),
+        rgba($color-grey-dark-1, 0.95)
+      ),
+      url(../img/main.jpg);
+
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // &__bottom {
+  //   grid-column: 1 /-1;
+  //   background-color: $color-grey-light-1;
+  // }
+
+  &__img {
+    width: 4.7rem;
+    height: 4.7rem;
+    fill: rgba($color-grey-light-1, 0.95);
+  }
+}

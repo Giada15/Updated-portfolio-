@@ -1,0 +1,124 @@
+// COLOR VARIABLES
+// $color-primary: #c69963;
+// $color-primary-dark: #b28451;
+
+// $color-secondary: #101d2c;
+
+// $color-grey-dark-1: #54483a;
+// $color-grey-dark-2: #6d5d4b;
+
+// COLOR VARIABLES
+
+$color-grey-light-1: #eaeae7;
+$color-grey-light-2: #fefefe;
+$color-grey-light-3: #9aa5ae;
+
+$color-pink: #ccc2bb;
+$color-pink-2: #cbcccb;
+
+$color-grey-dark-1: #4a4f55;
+$color-grey-dark-2: #898a8e;
+
+$color-black-1: #11171a;
+
+// FONT VARIABLES
+$font-title: "Cormorant Garamond", serif;
+$font-body: "Montserrat", sans-serif;
+
+//MARGIN
+$margin-bottom-title: 7rem;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 93.75em; //1500 px
+$bp-large: 68.75em; //1100 px
+$bp-md: 56.25em; // 900 px
+$bp-sm: 40em; // 640 px
+$bp-smallest: 28.125em; // 450 px
+
+//SKILL ITEMS MIXIN
+@mixin skill {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem;
+
+  @media only screen and(max-width: $bp-largest) {
+    padding: 1rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  // @media only screen and(max-width: $bp-md) {
+  //   font-size: 55%;
+  // }
+
+  @media only screen and(max-width: $bp-smallest) {
+    font-size: 40%;
+  }
+}
+
+body {
+  background-color: $color-grey-light-1;
+  font-family: $font-body;
+  font-weight: 200;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+//OVERALL SECTIONS LAYOUT WITH CSS GRID
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(4, min-content);
+  grid-template-columns:
+    [ml-start] 15% [ml-end center-start]
+    repeat(3, [col-start] 1fr [col-end])
+    [center-end mr-start] 15% [mr-end];
+
+  grid-row-gap: 10rem;
+}
+
+//BUTTON
+
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  &--light {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+  &--dark {
+    border: 1px solid $color-grey-dark-1;
+    color: $color-grey-dark-1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

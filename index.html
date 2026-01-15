@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kristi&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portfolio of Giada</title>
+  </head>
+  <body class="container">
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#projects">Projects</a></li>
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="header__left">
+        <h1 class="heading--1 header__title">
+          Hi there! <br />
+          I am <span>Giada</span>
+        </h1>
+
+        <p class="header__text">
+          Fourth-semester Software Development student at Mohawk College,
+          focused on software and web development. Skilled in JavaScript, HTML5,
+          CSS, React, Java, C#, SQL, PHP, Visual Studio, Figma, and database
+          theory, with a strong understanding of UI principles. Motivated to
+          grow in software and web development, with a strong work ethic,
+          adaptability, and a passion for learning. Fluent in English, Spanish,
+          and Italian, and comfortable collaborating in diverse, team-oriented
+          environments.
+        </p>
+
+        <div class="header__icons">
+          <a
+            href="https://github.com/Giada15"
+            target="_blank"
+            class="header__link header__link--dark"
+          >
+            <svg class="header__icon header__icon--light">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/giada-tascherio-60207a279/"
+            target="_blank"
+            class="header__link header__link--dark"
+          >
+            <svg class="header__icon header__icon--light">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+
+          <a href="#contact" class="header__link header__link--dark">
+            <svg class="header__icon header__icon--light">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="header__right">
+        <!-- <h3 class="header__right--text">Frontend Developer</h3> -->
+      </nav>
+
+      <!-- <div class="header__bottom"></div> -->
+    </header>
+
+    <section class="projects" id="projects">
+      <h2 class="heading--2 projects__title">My projects</h2>
+      <div class="projects__projects">
+        <div class="project">
+          <svg class="project__icon">
+            <use xlink:href="img/sprite.svg#icon-csswizardry"></use>
+          </svg>
+          <h3 class="heading--3 project__title">CSS GRID</h3>
+          <p class="project__description">
+            Nexter is a website created using CSS grid and implementing the Sass
+            preprocessor, prioritizing responsive grid design.
+          </p>
+          <a href="#nexter" class="btn btn--light project__btn">More</a>
+        </div>
+        <div class="project">
+          <img class="header__img" src="img/bootstrap.png" />
+          <h3 class="heading--3 project__title">BOOTSTRAP</h3>
+          <p class="project__description">
+            A personal hobby website built with HTML, Bootstrap, and CSS,
+            featuring responsive design to showcase my interests.
+          </p>
+          <a href="#hobby" class="btn btn--light project__btn">More</a>
+        </div>
+        <div class="project">
+          <svg class="project__icon">
+            <use xlink:href="img/sprite.svg#icon-csswizardry"></use>
+          </svg>
+          <h3 class="heading--3 project__title">Flexbox</h3>
+          <p class="project__description">
+            Trillo is a website designed exclusively with CSS Flexbox for
+            responsiveness, employing Sass for CSS organization.
+          </p>
+          <a href="#trillo" class="btn btn--light project__btn">More</a>
+        </div>
+        <div class="project">
+          <svg class="project__icon">
+            <use xlink:href="img/sprite.svg#icon-sass"></use>
+          </svg>
+          <h3 class="heading--3 project__title">Sass</h3>
+          <p class="project__description">
+            Natours is a website built with Sass, a float grid layout, Sass
+            variables, mixins, responsive images and several CSS animations.
+          </p>
+          <a href="#natours" class="btn btn--light project__btn">More</a>
+        </div>
+        <div class="project">
+          <svg class="project__icon">
+            <use xlink:href="img/sprite.svg#icon-javascript"></use>
+          </svg>
+          <h3 class="heading--3 project__title">Javascript</h3>
+          <p class="project__description">
+            Bankist is a website created wth JavaScript and DOM techniques for
+            visual elements like smooth scrolling, sliders, and more.
+          </p>
+          <a href="#bankist" class="btn btn--light project__btn">More</a>
+        </div>
+
+        <div class="project">
+          <svg class="project__icon">
+            <use xlink:href="img/sprite.svg#icon-react"></use>
+          </svg>
+          <h3 class="heading--3 project__title">React</h3>
+          <p class="project__description">
+            In Padella is a web application for discovering recipes, offering
+            sorting options by category, country of origin, and name.
+          </p>
+          <a href="#inpadella" class="btn btn--light project__btn">More</a>
+        </div>
+
+        <div class="project">
+          <svg class="project__icon">
+            <use xlink:href="img/sprite.svg#icon-react"></use>
+          </svg>
+          <h3 class="heading--3 project__title">React</h3>
+          <p class="project__description">
+            Quizzical is a multiple-choice quiz app built with functional React
+            components, sourcing necessary data from an API.
+          </p>
+          <a href="#quizzical" class="btn btn--light project__btn">More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero" id="about">
+      <div class="hero__left">
+        <img class="hero__img" src="img/webdev.png" alt="" />
+      </div>
+
+      <div class="hero__right">
+        <h2 class="heading--2 hero__title">About me</h2>
+        <p class="hero__text">
+          I am currently a fourth-semester Computer Systems Technology –
+          Software Development student based in Ontario, Canada, passionate
+          about creating applications that solve real-world problems while
+          delivering an enjoyable user experience. My coursework includes Web
+          Development (HTML, CSS, JavaScript), Object-Oriented Programming with
+          Java and C# .NET, Software Development Principles, and Database Theory
+          & SQL. Through these courses, I have developed a strong foundation in
+          both frontend and backend development, focusing on building
+          responsive, user-friendly applications. My specialties include CSS,
+          JavaScript, and React.js. I hold a Bachelor's degree in Architecture
+          and a Master's degree in Renewable Energy and Energy Efficiency.
+          Additionally, I completed a Front-End Developer bootcamp, where I
+          gained a strong understanding of front-end development principles and
+          responsive web design.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading--2 skills__title">My skills</h2>
+      <ul class="skills__skills">
+        <li class="skills__skill skills__skill--1">Semantic HTML</li>
+        <li class="skills__skill skills__skill--2">CSS</li>
+        <li class="skills__skill skills__skill--3">CSS GRID</li>
+        <li class="skills__skill skills__skill--4">FLEXBOX</li>
+        <li class="skills__skill skills__skill--5">SASS</li>
+        <li class="skills__skill skills__skill--6">JAVASCRIPT</li>
+        <li class="skills__skill skills__skill--7">REACT</li>
+        <li class="skills__skill skills__skill--8">GIT</li>
+        <li class="skills__skill skills__skill--9">NPM ECOSYSTEM</li>
+        <li class="skills__skill skills__skill--10">JSON</li>
+        <li class="skills__skill skills__skill--11">API</li>
+        <li class="skills__skill skills__skill--12">VS CODE</li>
+        <li class="skills__skill skills__skill--13">FIGMA</li>
+        <li class="skills__skill skills__skill--14">ADOBE PHOTOSHOP</li>
+        <li class="skills__skill skills__skill--15">ADOBE INDESIGN</li>
+      </ul>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer__left">
+        <p>GIADA TASCHERIO</p>
+        <p>tascheriogiada@gmail.com</p>
+      </div>
+
+      <div class="footer__center">
+        <div class="header__icons">
+          <a
+            href="https://github.com/Giada15"
+            target="_blank"
+            class="header__link header__link--light"
+          >
+            <svg class="header__icon header__icon--dark">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/giada-tascherio-60207a279/"
+            target="_blank"
+            class="header__link header__link--light"
+          >
+            <svg class="header__icon header__icon--dark">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+
+          <a href="#contact" class="header__link header__link--light">
+            <svg class="header__icon header__icon--dark">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__right">
+        <p>Designed and created by Giada Tascherio</p>
+      </div>
+    </footer>
+
+    <div class="popup" id="nexter">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nexter.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">Nexter</h2>
+            <p class="popup__text">
+              Nexter is a website designed exclusively using CSS grid,
+              prioritizing responsive grid implementation. Media queries were
+              added to enhance responsiveness, and Sass preprocessor was used to
+              organize the CSS file effectively. The project also relied on
+              tools like VS Code and NPM.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">SASS</li>
+              <li class="popup__tool">CSS GRID</li>
+              <li class="popup__tool">CSS ANIMATIONS</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://nexter-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Nexter"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="hobby">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/hobby.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">My Hobby</h2>
+            <p class="popup__text">
+              My Hobby Website is a responsive site developed using HTML,
+              Bootstrap, and CSS, enhanced with CSS animations for visual
+              appeal. It uses Bootstrap’s grid system, flex utilities, and
+              responsive utility classes to ensure adaptability across screen
+              sizes. Media queries were also used to improve responsiveness. The
+              design was first created in Figma, and the project was built in VS
+              Code and deployed via Netlify.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">CSS FLEXBOX</li>
+              <li class="popup__tool">BOOTSTRAP</li>
+              <li class="popup__tool">CSS ANIMATIONS</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://hobbywebsite.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/My-hobby-website"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="trillo">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/trillo.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">Trillo</h2>
+            <p class="popup__text">
+              Trillo is a website created exclusively using CSS Flexbox,
+              ensuring design responsiveness by incorporating media queries for
+              various screen sizes. Additionally, Sass preprocessor was utilized
+              to effectively organize the CSS code, and the project employed
+              tools like VS Code and NPM.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">SASS</li>
+              <li class="popup__tool">CSS FLEXBOX</li>
+              <li class="popup__tool">CSS ANIMATIONS</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://trillo-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Trillo"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="natours">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/natours.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">Natours</h2>
+            <p class="popup__text">
+              Natours is a website developed with Sass and CSS animations. The
+              project is built using a structured CSS architecture with the
+              incorporation of Sass for improved organization and structure. The
+              layout is constructed using a float grid. The project incorporates
+              various elements such as Sass variables, mixins, responsive images
+              with techniques like art direction, density, and resolution
+              switching, as well as numerous CSS animations.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">CSS</li>
+              <li class="popup__tool">SASS</li>
+              <li class="popup__tool">CSS ANIMATIONS</li>
+              <li class="popup__tool">RESPONSIVE IMAGES</li>
+              <li class="popup__tool">BROWSER SUPPORT</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://natours-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Natours"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="mapty">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/mapty.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">Mapty</h2>
+            <p class="popup__text">
+              Mapty is an application designed to store running or cycling
+              workouts based on the user's location. By using the geolocation
+              API, the app gathers the user's position and displays the map
+              accordingly. Also, the application allows users to click on
+              specific workout logs, automatically moving the map to the
+              corresponding workout position.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">CSS</li>
+              <li class="popup__tool">JAVASCRIPT</li>
+              <li class="popup__tool">API</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://mapty-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Mapty-App"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="bankist">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/bankist.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">Bankist</h2>
+            <p class="popup__text">
+              This webpage has been created with visual components using
+              JavaScript and DOM manipulation techniques, including features
+              like lazy loading images, smooth scrolling and sliders.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">CSS</li>
+              <li class="popup__tool">JAVASCRIPT</li>
+              <li class="popup__tool">LAZY LOADING IMAGES</li>
+              <li class="popup__tool">SMOOTH SCROLLING</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://bankist-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Bankist-website"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="inpadella">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/inpadella.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">In Padella</h2>
+            <p class="popup__text">
+              In Padella is web application that allows users to discover a wide
+              range of recipes. Users have the ability to sort recipes based on
+              their category, country of origin, and name. The creation process
+              of this project incorporated Figma as a design tool and utilized
+              React components for its development.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">CSS</li>
+              <li class="popup__tool">REACT JS</li>
+              <li class="popup__tool">FIGMA</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://inpadella-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Recipes-App"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="quizzical">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/quizzical.png" alt="" />
+        </div>
+
+        <div class="popup__right">
+          <div class="popup__right--container">
+            <a href="#projects" class="popup__close">&times;</a>
+            <h2 class="heading--2">Quizzical</h2>
+            <p class="popup__text">
+              Quizzical is a multiple-choice quiz that allows users to select
+              answers and receive scores. The application is constructed using
+              functional React components, and the necessary data is obtained
+              from an API source.
+            </p>
+            <h3 class="heading--3 popup__h3">Tools used</h3>
+            <ul class="popup__tools">
+              <li class="popup__tool">HTML</li>
+              <li class="popup__tool">CSS</li>
+              <li class="popup__tool">REACT JS</li>
+              <li class="popup__tool">VS CODE</li>
+              <li class="popup__tool">GIT</li>
+              <li class="popup__tool">NPM ECOSYSTEM</li>
+            </ul>
+            <div class="popup__btns">
+              <a
+                href="https://quizzical-gt.netlify.app/"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Giada15/Quizzical"
+                target="_blank"
+                class="btn btn--dark popup__btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
